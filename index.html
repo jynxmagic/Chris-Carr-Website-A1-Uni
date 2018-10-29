@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="LTR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chris Carr">
+
+    <!-- this is an important HTML5 meta tag. when using this tag, all object dimensions must be relative (e.g. 100%, 50%, 2em), rather than fixed. This tag basically ensures that the webpage fills the full width of the device - no need to zoom/horizontal scroll. https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chris Carr e-portfolio">
+    
+    
+    
+    
+    <title>Chris Carr e-portfolio</title>
+    
+    <!-- minify before going live - would async load but not supported in enough browsers yet https://caniuse.com/#feat=link-rel-preload -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    
+    
+    <!-- Style only attached to homepage -->
+    <style>
+        .container
+        {
+            animation-name: scale;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+        }
+        .content
+        {
+            animation-name: none;
+        }
+    </style>
+
+    
+</head>
+
+<body>
+    <div class="container">
+        
+        <!-- header start -->
+        <header>
+            <!-- logo -->
+            <div class="logo-container">
+                <a href="#" class="logo">Chris Carr</a>
+            </div>
+            
+            <nav>
+                <div class="nav-container">
+                    
+                    <!-- mobile nav -->
+                    <section class="mobile-nav nav">
+                        <ul>
+                            <li><a href="index.html" class="active"><img src="images/home.svg" /></a></li>
+                            <li><a href="#"><img src="images/book.svg" /></a></li>
+                            <li><a href="about-me.html"><img src="images/user.svg" /></a></li>
+                        </ul>
+                    </section>
+                    
+
+                    
+                    <!-- desktop nav -->
+                    <section class="desktop-nav nav">
+                        <ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="#">Units 1 & 2</a></li>
+                            <li><a href="about-me.html">About Me</a></li>
+                        </ul>
+                    </section>
+                </div>    
+            </nav>
+        </header>
+        <!-- header end -->
+        
+        <div class="content">
+                <div class="header-clearfix"></div>
+            
+				<section class="splash splash-img"> 
+                    
+                    <p class="splash-quote">A Website made with pure CSS and HTML5</p> 
+            
+                </section>
+            
+                <section class="hero">
+                </section>
+            
+                <img src="images/down-arrow.png" class="arrow" /><h1 style="display: inline-block">About Me</h1><img src="images/down-arrow.png" class="arrow" id="right-arrow" />
+                
+                <section class="basic-information-container">
+                    <section class="basic-information">
+                        <article>
+                            <aside style="float: left;">
+                                <p>Name:</p>
+                                <p>DOB: </p>
+                                <p>Address: </p>
+                            </aside>
+                            <aside style="float: left; margin-left: 4em;">
+                                <p>Chris Carr</p>
+                                <p>14/09/96</p>
+                                <p>12 Langdale Terrace <br> Stalybridge <br> Cheshire <br> SK15 1EX</p>
+                            </aside>
+                        </article>
+                        <article style="clear: both; padding-top: 2em;">
+                            <p>lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet</p>
+                        </article>
+                    </section>
+                </section>
+            
+                <h2 style="padding-top: 1em;">Qualifications</h2>
+            
+            <section class="qualifications-container">
+                <article>
+                    <table>
+                        <caption><h3>Higher Eductation</h3></caption>
+                        <tr><th>Name</th><th>Grade</th><th>Location</th><th>Level</th></tr>
+                        <tr><td>IT Software Web and Telecoms Professionals</td><td>Merit</td><td>Aspire Achieve Advance</td><td>Higher Apprenticeship</td></tr>
+                        <tr><td>Diploma for ICT Professionals – Systems and Principles</td><td>Merit</td><td>Aspire Achieve Advance</td><td>Level 4</td></tr>
+                        <tr><td>Professional Competence for IT and Telecoms Professionals</td><td>Pass (Highest Grade)</td><td>Aspire Achieve Advance</td><td>Level 4</td></tr>
+                    </table>
+                </article>
+                <article>
+                    <table>
+                        <caption><h3>Extended Eductation</h3></caption>
+                        <tr><th>Name</th><th>Grade</th><th>Location</th><th>Level</th></tr>
+                        <tr><td>IT Software Web and Telecoms Professionals</td><td>MMP</td><td>My Futures Bright Ltd</td><td>Advanced Apprenticeship</td></tr>
+                        <tr><td>Extended Diploma in IT</td><td>MMP</td><td>My Futures Bright Ltd</td><td>Level 3</td></tr>
+                        <tr><td>Functional Skills IT</td><td>Pass</td><td>My Futures Bright Ltd</td><td>Level 2</td></tr>
+                    </table>
+                </article>
+                <article>
+                    <table>
+                        <caption><h3>Seconday School Eductation</h3></caption>
+                        <tr><th>Name</th><th>Grade</th><th>Level</th></tr>
+                        <tr><td>English Language</td><td>A</td><td>GCSE</td></tr>
+                        <tr><td>Biology</td><td>B</td><td>GCSE</td></tr>
+                        <tr><td>English Literature</td><td>B</td><td>GCSE</td></tr>
+                        <tr><td>Maths</td><td>B</td><td>GCSE</td></tr>
+                        <tr><td>Physics</td><td>B</td><td>GCSE</td></tr>
+                        <tr><td>Chemistry</td><td>C</td><td>GCSE</td></tr>
+                        <tr><td>Business and Communication</td><td>C</td><td>GCSE</td></tr>
+                        <tr><td>Engineering</td><td>Pass</td><td>BTEC Level 2</td></tr>
+                        <tr><td>Business and Enterprise</td><td>Pass</td><td>Certificate</td></tr>
+                    </table>
+                </article>
+            </section>
+
+                
+        </div>
+            
+        <footer>
+            <section class="footer-links">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Units 1 & 2</li></a>
+                    <a href="#"><li>About Me</li></a>
+                    <li><small>© Copyright Chris Carr 2018</small></li>
+                </ul>
+                
+                
+                
+                
+            </section>
+        </footer>
+        
+    </div>
+</body>    
+    
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="LTR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chris Carr">
+
+    <!-- this is an important HTML5 meta tag. when using this tag, all object dimensions must be relative (e.g. 100%, 50%, 2em), rather than fixed. This tag basically ensures that the webpage fills the full width of the device - no need to zoom/horizontal scroll. https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chris Carr e-portfolio">
+    
+    
+    
+    
+    <title>Chris Carr e-portfolio</title>
+    
+    <!-- minify before going live - would async load but not supported in enough browsers yet https://caniuse.com/#feat=link-rel-preload -->
+    <link rel="stylesheet" href="css/main.css">
+
+    
+</head>
+
+<body>
+    <div class="container">
+        
+        <!-- header start -->
+        <header>
+            <!-- logo -->
+            <div class="logo-container">
+                <a href="#" class="logo">Chris Carr</a>
+            </div>
+            
+            <nav>
+                <div class="nav-container">
+                    
+                    <!-- mobile nav -->
+                    <section class="mobile-nav nav">
+                        <ul>
+                            <li><a href="index.html"><img src="images/home.svg" /></a></li>
+                            <li><a href="#"><img src="images/book.svg" /></a></li>
+                            <li><a href="about-me.html" class="active"><img src="images/user.svg" /></a></li>
+                        </ul>
+                    </section>
+                    
+
+                    
+                    <!-- desktop nav -->
+                    <section class="desktop-nav nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Units 1 & 2</a></li>
+                            <li><a href="about-me.html" class="active">About Me</a></li>
+                        </ul>
+                    </section>
+                </div>    
+            </nav>
+        </header>
+        <!-- header end -->
+        
+        <div class="content">
+                <div class="header-clearfix"></div>
+            
+        </div>
+            
+        <footer>
+            <section class="footer-links">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Units 1 & 2</li></a>
+                    <a href="#"><li>About Me</li></a>
+                    <li><small>© Copyright Chris Carr 2018</small></li>
+                </ul>
+                
+                
+                
+                
+            </section>
+        </footer>
+        
+    </div>
+</body>    
+    
+</html>
