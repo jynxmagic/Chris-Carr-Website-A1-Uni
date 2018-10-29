@@ -82,11 +82,13 @@ header
     width: 100%;
     background-color: crimson;
     position: fixed;
+    
+    /* ensure header is always on top - the moving arrows would be on top of the header */
+    z-index: 9999;
 }
 
 .logo-container
 {
-    margin-left: 5%;
     float: left;
 }
 
@@ -109,15 +111,14 @@ a
 .nav
 {
     float: right;
-    margin-right: 5%;
     margin-top: 1em;
-    width: 60%;
+    width: 78%;
 }
 
 .nav ul li
 {
     display: inline;
-    margin-left: 10%
+    margin-left: 5%
 }
 
 .desktop-nav .active
@@ -151,7 +152,7 @@ a
     border-top-right-radius: 15px;
 }
 
-.mobile-nav li:has(.active)
+.mobile-nav li .active
 {
    background-color: white;
 }
@@ -168,7 +169,7 @@ a
 {   
     .nav
     {
-        width: 46%;
+        width: 61%;
     }
     .mobile-nav
     {
@@ -209,7 +210,7 @@ footer
 {
 	position: relative;
 	bottom: 0;
-	height: 300px;
+	height: 400px;
 	width: 100%;
 	background-color: black;
 }
@@ -343,6 +344,7 @@ footer section
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    z-index: 0;
 }
 
 
@@ -385,7 +387,7 @@ table
 {
     margin-left: 2%;
     table-layout: fixed;
-    min-width: 1200px;
+    min-width: 90%;
     margin-bottom: 3em;
 }
 
