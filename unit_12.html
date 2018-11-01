@@ -7,12 +7,12 @@
 
     <!-- this is an important HTML5 meta tag. when using this tag, all object dimensions must be relative (e.g. 100%, 50%, 2em), rather than fixed. This tag basically ensures that the webpage fills the full width of the device - no need to zoom/horizontal scroll. https://www.w3schools.com/css/css_rwd_viewport.asp -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chris Carr PDP">
+    <meta name="description" content="Chris Carr Units 1 and 2">
     
     
     
     
-    <title>Chris Carr PDP</title>
+    <title>Chris Carr Units 1 and 2</title>
     
     <!-- minify before going live - would async load but not supported in enough browsers yet https://caniuse.com/#feat=link-rel-preload -->
     <link rel="stylesheet" href="css/main.css">
@@ -36,9 +36,9 @@
                     <section class="mobile-nav nav">
                         <ul>
                             <li><a href="index.html"><img src="images/home.svg" /></a></li>
-                            <li><a href="unit_12.html"><img src="images/book.svg" /></a></li>
+                            <li class="active"><a href="unit_12.html"><img src="images/book.svg" /></a></li>
                             <li><a href="unit_34.html"><img src="images/book.svg" /></a></li>
-                            <li class="active"><a href="pdp.html"><img src="images/user.svg" /></a></li>
+                            <li><a href="pdp.html"><img src="images/user.svg" /></a></li>
                         </ul>
                     </section>
                     
@@ -48,9 +48,9 @@
                     <section class="desktop-nav nav">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="unit_12.html">Units 1 & 2</a></li>
+                            <li><a class="active" href="unit_12.html">Units 1 & 2</a></li>
                             <li><a href="unit_34.html">Units 3 & 4</a></li>
-                            <li><a class="active" href="pdp.html">Personal Development</a></li>
+                            <li><a href="pdp.html">Personal Development</a></li>
                         </ul>
                     </section>
                 </div>    
@@ -60,11 +60,10 @@
         
         <div class="content">
                 <div class="header-clearfix"></div>
-			
-				<section class="splash splash-fix">
-                	<img src="images/down-arrow.png" class="arrow" /><h1 style="display: inline-block; font-size: 1em;">Personal Development and Evaluation</h1><img src="images/down-arrow.png" class="arrow" id="right-arrow" />
+    			<section class="splash splash-fix">
+                	<img src="images/down-arrow.png" class="arrow" /><h1 style="display: inline-block;">Units 1 & 2</h1><img src="images/down-arrow.png" class="arrow" id="right-arrow" />
 				</section>
-
+			
 				<section class="information-container">
 					<article class="personal-evaluation">
 						<h2>My Personal Evaluation</h2>
@@ -77,6 +76,7 @@
 					</article>
 				</section>
 
+                
         </div>
             
         <footer>
