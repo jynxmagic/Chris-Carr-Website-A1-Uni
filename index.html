@@ -62,7 +62,16 @@
         <div class="content">
                 <div class="header-clearfix"></div>
             
-				<section class="splash splash-img"> 
+				<section class="splash splash-img">
+					
+					
+					
+					<!-- HTML5 tag to reduce page download size dependant on screen width (smaller/larger image downloaded dependant on width) -->
+					<picture>
+						<source media="(max-width: 800px)" srcset="images/splash_image_tablet.jpg">
+						<source media="(max-width: 400px)" srcset="images/splash_image_mobile.jpg">
+						<img src="images/splash_image.jpg" alt="Splash Image">
+					</picture>
                     
                     <p class="splash-quote">A Website made with pure CSS and HTML5</p> 
             
@@ -71,7 +80,7 @@
                 <section class="hero">
                 </section>
             
-                <img src="images/down-arrow.png" class="arrow" /><h1 style="display: inline-block;">About Me</h1><img src="images/down-arrow.png" class="arrow" id="right-arrow" />
+                <section class="intro"><img src="images/down-arrow.png" class="arrow" /><h1 style="display: inline-block;">About Me</h1><img src="images/down-arrow.png" class="arrow" id="right-arrow" /></section>
                 
                 <section class="basic-information-container">
                     <section class="basic-information">
@@ -88,7 +97,17 @@
                             </aside>
                         </article>
                         <article style="clear: both; padding-top: 2em;">
-                            <p>lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet lorem ipsum dolar sit amet</p>
+                            <p>A competent, intellectual individual with 4 years full time work experience and 4 years educational IT experience. Working to tight deadlines within project management methodologies lends itself to great time keeping and organizational skills.</p>
+							<p>I have built many sites before, for some huge brand names. Click on any of the images below to see the websites.</p>
+							
+							<ul class="websites">
+								
+								<!-- target = _blank applied to all links to make sure external sites open in new tab -->
+								<li><a target="_blank" href="https://www.liverpool-one.com/"><img alt="Liverpool One" src="https://www.liverpool-one.com/wp-content/themes/liverpoolone/images/headfoot-logo.png" width="100px" height="100px"></a></li>
+								<li><a target="_blank" href="https://shop.nottinghamforest.co.uk/"><img src="https://shop.nottinghamforest.co.uk/skin/frontend/nffc/default/images/logo.png" alt="Nottingham Forest Football Club" style="background-color: red;" width="100px" height="100px"></a></li>
+								<li><a target="_blank" href="https://www.prestige.co.uk/"><img src="https://www.prestige.co.uk/skin/frontend/pushon/prestige/images/logo.png" alt="Prestige" width="150px" height="100px"></a></li>
+								<li><a target="_blank" href="https://towsure.com/"><img alt="Towsure" src="https://skin.towsure.com/frontend/enterprise/towsure/images/logo.jpg" width="100px" height="100px"></a></li>
+							</ul>
                         </article>
                     </section>
                 </section>
@@ -137,17 +156,22 @@
         <footer>
             <section class="footer-links">
                 <ul>
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>Units 1 & 2</li></a>
-                    <a href="#"><li>Units 3 & 4</li></a>
-                    <a href="#"><li>Personal Development</li></a>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="unit_12.html"><li>Units 1 & 2</li></a>
+                    <a href="unit_34.html"><li>Units 3 & 4</li></a>
+                    <a href="pdp.html"><li>Personal Development</li></a>
                     <li><small>© Copyright Chris Carr 2018</small></li>
-                </ul>
-                
-                
-                
-                
+				</ul>
             </section>
+			<section class="footer-badges">
+				<p>
+					<a href="http://jigsaw.w3.org/css-validator/check/referer">
+						<img style="border:0;width:88px;height:31px"
+							src="http://jigsaw.w3.org/css-validator/images/vcss"
+							alt="Valid CSS!" />
+					</a>
+				</p>
+			</section>
         </footer>
         
     </div>

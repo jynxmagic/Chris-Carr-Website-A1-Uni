@@ -45,7 +45,7 @@ h1
 h2
 {
     font-size: 3em;
-    margin-left: 35%;
+	text-align: center;
 }
 
 
@@ -258,6 +258,7 @@ footer section
 
 .splash
 {
+	position: relative;
     height: 400px;
 }
 
@@ -266,21 +267,34 @@ footer section
 	margin-top: 90px;
 }
 
-.splash-img
+picture
 {
-    background-image: url(../images/splash_image.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: contain;
     width: 100%;
- }
+}
+
+picture img
+{
+	width: inherit;
+	height: 400px;
+}
 
 .splash-quote
 {
+	position: absolute;
     font-size: 2em;
     color: white;
     -webkit-text-stroke: 1px black;
     text-align: center;
-    padding-top: 50px;
+    top: 50px;
+	margin-left: 10%;
+}
+
+.intro
+{
+	clear: both;
+	margin-top: 150px;
 }
 
 /*splash image tablet */
@@ -305,7 +319,7 @@ footer section
 .hero
 {
     margin-left: 40%;
-    
+    position: absolute;
     /* negative margin to bring hero image into splash image - this is BAD but im lazy */
     margin-top: -7%;
     background-image: url("../images/hero-img.jpg");
@@ -437,10 +451,52 @@ th
 	}
 }
 
+@media (max-width: 400px)
+{
+	#right-arrow
+	{
+		display: none;
+	}
+}
+
 .information-container
 {
 	height: auto;
 	background-color: white;
+	text-align: center;
+}
+
+.awesome-text
+{
+	animation-name: awesome-text;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes awesome-text
+{
+	0% {color: red}
+	20% {color: green}
+	40% {color: aqua}
+	60% {color: blue}
+	80% {color: black}
+	100% {color: darkorange}
+}
+
+.personal-development 
+{
+	padding-bottom: 400px;
+}
+
+.websites
+{
+	list-style: none;
+	align-content: center;
+}
+
+.websites li
+{
+	display: inline-block;
 }
 
 /* main content end */
