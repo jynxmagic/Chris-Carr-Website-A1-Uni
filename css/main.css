@@ -152,9 +152,10 @@ a
     border-top-right-radius: 15px;
 }
 
-.mobile-nav li .active
+.mobile-nav .active
 {
    background-color: white;
+	border-bottom: 1px solid white;
 }
 
 
@@ -210,7 +211,7 @@ footer
 {
 	position: relative;
 	bottom: 0;
-	height: 400px;
+	height: auto;
 	width: 100%;
 	background-color: black;
 }
@@ -357,7 +358,7 @@ footer section
     margin-top: 2%;
     background-color: white;
     width: 100%;
-    height: 30em;
+    height: auto;
 }
 
 .basic-information
@@ -372,7 +373,7 @@ footer section
     margin-top: 1em;
     background-color: white;
     width: 100%;
-    height: 50em;
+    height: auto;
     overflow-x: auto;
 }
 
@@ -402,6 +403,30 @@ th
 {
     padding: 0.3em 3em 0.3em 3em;
     font-weight: bold;
+}
+
+/* some responsive fixes */
+
+@media (max-width: 800px)
+{
+	p{
+		font-size: 12px;
+	}
+	#right-arrow{
+		margin-left: 15%;
+	}
+		.footer-links
+	{
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 650px)
+{
+	h1, h2{
+		font-size: 2em;
+		margin-left: 15%;
+	}
 }
 
 /* main content end */
